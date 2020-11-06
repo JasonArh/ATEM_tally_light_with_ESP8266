@@ -3,12 +3,12 @@ Wireless tally light for use with ATEM switchers. Connects over WiFi using only 
 
 Should easily be convertable to use with regular Arduino boards and an ESP8266 module, by changeing the include statements and a few other things (however, this is not tested).
 
-__DIY guide__ is available in the [wiki](https://github.com/AronHetLam/ATEM_tally_light_with_ESP8266/wiki/DIY-guide).
+__DIY guide__ is available in the [wiki](https://github.com/JasonArh/ATEM_tally_light_with_ESP8266/wiki/Hardware-Assembly-Guide).
 
 # What does it do?
 Once set up, it will automatically connect to an ATEM swithcer over WiFi and function as a tally light.
 
-Once the program is uploaded to the ESP8266 the setup is done with a webpage it serves over WiFi where you are able to see status details, and perform the basic setup. Depending on if it's connecting to a known network or not it will serve the webpage on it's IP address, or on [192.168.4.1](HTTP://192.168.4.1) (default) over a softAP (access point) named "Tally light setup". For more detals, see the guide int the [wiki](https://github.com/AronHetLam/ATEM_tally_light_with_ESP8266/wiki/DIY-guide).
+Once the program is uploaded to the ESP8266 the setup is done with a webpage it serves over WiFi where you are able to see status details, and perform the basic setup. Depending on if it's connecting to a known network or not it will serve the webpage on it's IP address, or on [192.168.4.1](HTTP://192.168.4.1) (default) over a softAP (access point) named "Tally light setup". For more detals, see the guide int the [wiki](https://github.com/JasonArh/ATEM_tally_light_with_ESP8266/wiki/Programming-Guide).
 
 As Atem swithcers only allow for 5-8 simultanious clients (dependant on the model) v2.0 introduced Tally Server functionality. This makes the system only require one connection from the switcher, as the tally lights can retransmit data to other tallys. An example setup is shown in the diagram below, where arrows indicate the direction of tally data from swtcher/tally unit to client tally unit.
 
